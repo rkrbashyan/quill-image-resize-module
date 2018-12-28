@@ -1,5 +1,5 @@
 {
-	"name": "quill-image-resize-module-fork-inn4science",
+	"name": "fork-inn4science-quill-image-resize-module",
 	"version": "0.0.1",
 	"description": "A module for Quill rich text editor to allow images to be resized.",
 	"main": "image-resize.min.js",

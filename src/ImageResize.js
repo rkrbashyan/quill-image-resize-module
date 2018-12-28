@@ -37,6 +37,15 @@ export default class ImageResize {
 		// respond to clicks inside the editor
 		this.quill.root.addEventListener("click", this.handleClick, false);
 
+		// respond to clicks on editor's wrapper
+		if (this.quill.root.parentNode.parentNode) {
+			this.quill.root.parentNode.parentNode.addEventListener(
+				"click",
+				this.handleClick,
+				false
+			);
+		}
+
 		// respond to clicks outside the editor
 		this.quill.root.addEventListener("blur", this.hide, false);
 
