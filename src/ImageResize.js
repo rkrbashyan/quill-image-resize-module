@@ -34,20 +34,17 @@ export default class ImageResize {
 		// disable native image resizing on firefox
 		document.execCommand("enableObjectResizing", false, "false");
 
-		// respond to clicks inside the editor
-		this.quill.root.addEventListener("click", this.handleClick, false);
-
-		// respond to clicks on editor's wrapper
+		// respond to clicks on editor's wrapper if any
+		// otherwise respond to clicks inside the editor
 		if (this.quill.root.parentNode.parentNode) {
 			this.quill.root.parentNode.parentNode.addEventListener(
 				"click",
 				this.handleClick,
 				false
 			);
+		} else {
+			this.quill.root.addEventListener("click", this.handleClick, false);
 		}
-
-		// respond to clicks outside the editor
-		this.quill.root.addEventListener("blur", this.hide, false);
 
 		this.quill.root.parentNode.style.position =
 			this.quill.root.parentNode.style.position || "relative";

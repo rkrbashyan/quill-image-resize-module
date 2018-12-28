@@ -1,5 +1,5 @@
 {
-	"name": "fork-inn4science-quill-image-resize-module",
+	"name": "inn4science-quill-image-resize-module-fork-for-vue2-editor",
 	"version": "0.0.1",
 	"description": "A module for Quill rich text editor to allow images to be resized.",
 	"main": "image-resize.min.js",

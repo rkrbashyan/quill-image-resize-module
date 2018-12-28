@@ -2,6 +2,9 @@
 
 https://github.com/kensnyder/quill-image-resize-module
 
+#Changes
+Respond to clicks on editor's wrapper if any, otherwise respond to clicks inside the editor
+
 # Quill ImageResize Module
 
 A module for Quill rich text editor to allow images to be resized.
